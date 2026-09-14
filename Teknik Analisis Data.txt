@@ -1,0 +1,12 @@
+Teknik Analisis Data
+Teknik analisis data yang dilakukan pada penelitian ini adalah:
+	Data penelitian yang telah diperoleh diinput kedalam software R.
+	Melakukan analisis dengan menggunakan metode Singular Spectrum Analysis (SSA) yang dilakukan dengan 2 tahapan yaitu:
+	Dekomposisi
+	Langkah pertama dalam dekomposisi adalah embedding, pada langkah ini data deret waktu yang tidak terdapat data hilang ditransformasi kedalam matriks lintasan (Trajectory matrix) atau yang dinamakan matriks Hankel dengan dimensi L\ x\ K. Matriks lintasan merupakan matriks dimana elemen pada anti diagonalnya bernilai sama.
+	Langkah kedua adalah membuat Singular Value Decomposition (SVD) dari matriks lintasan. Matriks terbentuk dari eigen vector U_i, singular value \sqrt{\lambda_i} dan principal component V_i^T. Ketiga elemen pembentuk SVD disebut dengan eigentriple.
+	Rekontruksi
+	Langkah pertama dalam rekontruksi adalah Grouping, Pada tahap ini dilakukan pengelompokan eigentriple berdasarkan karakteristik setiap komponen.
+	Langkah kedua adalah Diagonal Averaging, Pada tahap ini dilakukan dengan mentransformasi setiap matriks pada tahap pengelompokan menjadi suatu runtun waktu baru.
+	Menghitung hasil peramalan Singular Spectrum Analysis (SSA) dari data deret waktu menggunakan metode vector forecasting.
+	Membuat kesimpulan peramalan.
